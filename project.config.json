@@ -1,0 +1,87 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"appid": "wxc44a0ebc4aded1ed",
+	"projectname": "%E8%AE%A1%E5%88%92makt",
+	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "启动用户页",
+					"pathName": "pages/user/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "启动ideal页",
+					"pathName": "pages/ideal/ideal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "启动idealdetail页",
+					"pathName": "pages/idealdetail/idealdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "启动idealdetail页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "启动idealdetail页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "启动idealdetail页",
+					"pathName": "pages/idealDelete/idealDelete",
+					"scene": null
+				}
+			]
+		}
+	}
+}

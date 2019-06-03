@@ -1,0 +1,105 @@
+.page {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-color: rgb(241, 240, 246);
+  padding-bottom: 100rpx;
+  overflow: hidden;
+}
+
+button::after {
+    border: 0; 
+}
+
+.ideal-set {
+  background-color: #fff;
+}
+
+.ideal-item {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px dashed #eee;
+  padding: 31rpx;
+  font-size: 31rpx;
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(94, 94, 94);
+}
+
+.ideal-item:last-child {
+  border-bottom: none;
+}
+
+.ideal-label {
+  display: block;
+  color: #999;
+  white-space: nowrap;
+  /* min-width: 100rpx; */
+  /* max-width: 150rpx; */
+  width: 150rpx;
+  text-align: center;
+}
+
+.ideal-control {
+  flex: 8;
+  padding: 0 0 0 32rpx;
+  font-size: 32rpx;
+}
+
+.ideal-input {
+  font-size: 31rpx;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 150rpx;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button {
+  display: inline-block;
+  flex: 1;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  border-image: none;
+  box-shadow: none;
+  background-color: #fff;
+  font-size: 32rpx;
+}
+
+.button-primary {
+  background-color: #1296db;
+  border: 1px solid #1296db;
+  color: #fff;
+}
+
+.button-completed {
+  background-color: #c9c6c6;
+  border: 1px solid #c9c6c6;
+  color: #fff;
+}
+
+.button-delete {
+  background-color: #E64340;
+  border: 1px solid #E64340;
+  color: #fff;
+}
+
+.button-round {
+  border-radius: 300rpx;
+}

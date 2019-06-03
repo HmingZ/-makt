@@ -1,0 +1,36 @@
+<view class='container'>
+
+  <view class="userinfo">
+    <button class="userinfo-avatar" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" ><image class='userinfo-avatar-image' mode='aspectFill' src='{{avatarUrl}}' ></image></button>
+    <view class='userinfo-avatar-name' wx:if="{{userInfo}}">{{userInfo.nickName}}</view>
+    <button class="userinfo-avatar-name" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" wx:else>
+      授权登录
+    </button>
+  </view>
+
+ 
+ <view class="weui-cells__title"> 座右铭 </view>
+
+  <view class="weui-cells" >
+    <view class="weui-cell" wx:for="{{list}}">
+        <lable calss="weui-cell-item" >{{item.motto}}</lable>
+    </view>
+  </view>
+
+
+  <button class="setMotto" bindtap='setMotto' ><image class='setMottoImage' mode='aspectFill' src='{{setMottoUrl}}' ></image></button>
+
+
+</view>
+
+<view wx:if="{{list[0].motto !== ''}}"> 
+  <l-loading show="{{true}}" custom="{{true}}">
+  　　<image src="../../images/longmao02.gif"></image>
+　</l-loading>
+
+</view>
+<view wx:else>
+  <l-loading show="{{true}}" custom="{{true}}">
+  　　<image src="../../images/longmao02.gif"></image>
+　</l-loading>
+</view>

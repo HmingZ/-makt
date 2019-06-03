@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/ideal/ideal",
+    "pages/idealdetail/idealdetail",
+    "pages/idealupdate/idealupdate",
+    "pages/past/past",
+    "pages/home/home",
+    "pages/user/login",
+    "pages/setmotto/setmotto"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "计划makt",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/ideal/ideal",
+        "text": "ideal",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/icon11.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "images/icon3.png",
+        "selectedIconPath": "images/icon33.png"
+      },
+      {
+        "pagePath": "pages/user/login",
+        "text": "user",
+        "iconPath": "images/icon5.png",
+        "selectedIconPath": "images/icon55.png"
+      }
+    ]
+    
+  },
+  "sitemapLocation": "sitemap.json"
+}

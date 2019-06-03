@@ -1,0 +1,19 @@
+<view class='container' >
+<view class="ideal-item">
+      <label class="ideal-label">座右铭</label>
+      <label class="ideal-control">
+      <input class='mottoDetail' placeholder="{{placeholder}}" data-value='{{value}}' bindinput='getvalue' value='{{value}}' auto-focus>
+      </input>
+      </label>
+</view>
+<view class="ideal-item">
+      <view class="button-group" style="width:100%">
+        <button class="button button-completed" bindtap="CancelTap">取消</button>
+        <button class='button setMottoDetail' bindtap='setMottoDetail' data-id="{{dataId}}" >设定</button>
+      </view>
+</view>
+
+
+
+
+</view>

@@ -1,0 +1,45 @@
+<view class='container' >
+  <view class="ideal-item">
+      <label class="ideal-label">目标</label>
+      <label class="ideal-control">
+      <input class="ideal-input w-full" value="{{idealName}}" placeholder="目标名称" bindinput="idealName" auto-focus>
+      </input>
+      </label>
+  </view>
+  <view class="ideal-item">
+      <label class="ideal-label">开始时间</label>
+      <label class="ideal-control time-picker">
+        <picker class="w-full ideal-item__date" mode="date" bindchange="beginDate">
+          {{beginDate ? beginDate:"日期"}}
+        </picker>
+      </label>
+      <label class="ideal-control">
+        <picker class="w-full ideal-item__time" mode="time" bindchange="beginTime">
+          {{beginTime ? beginTime:"时间"}}
+        </picker>
+      </label>
+  </view>
+  <view class="ideal-item">
+      <label class="ideal-label">截止时间</label>
+      <label class="ideal-control time-picker">
+        <picker class="w-full ideal-item__date" mode="date" bindchange="endDate">
+          {{endDate ? endDate:"日期"}}
+        </picker>
+      </label>
+      <label class="ideal-control">
+        <picker class="w-full ideal-item__time" mode="time" bindchange="endTime">
+          {{endTime ? endTime:"时间"}}
+        </picker>
+      </label>
+  </view>
+  <view class="ideal-item">
+      <view class="button-group" style="width:100%">
+        <button class="button button-completed" bindtap="CancelTap">取消</button>
+        <button class="button button-primary" bindtap="SaveTap" data-ideal="{{idealName}}" data-beginDate="{{beginDate}}" data-beginTime="{{beginTime}}" data-endDate="{{endDate}}" data-endTime="{{endTime}}">设定</button>
+      </view>
+  </view>
+
+
+
+
+</view>

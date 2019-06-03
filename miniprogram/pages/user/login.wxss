@@ -1,0 +1,85 @@
+.container{
+  
+  height: 100%;
+  padding: 10rpx 0;
+  box-sizing: border-box;
+
+}
+.userinfo {  
+  width: 750rpx;  
+  color: #999999;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+  
+.userinfo-avatar {  
+  overflow: hidden; 
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  padding-left: 0;
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.userinfo-avatar-image{
+  width: 160rpx;  
+  height: 160rpx;  
+  border-radius: 50%; 
+  align-items: center;
+}
+.userinfo-avatar-name{
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.weui-cells__title{
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 41rpx;
+  margin-bottom: 10rpx;
+}
+
+.setMottoImage{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 32px;
+  padding: 24rpx;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color:#1296db;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3rpx 20rpx;
+
+}
+
+
+.weui-cells{
+  width: 100%;
+  font-weight: bold;
+  font-family: monospace;
+  color: rgb(28, 166, 207)
+}
+
+.loading{
+  background-color:#ffffff;
+  color: #ffffff;
+
+}
+.weui-cell{
+
+}
+.weui-cell-item{
+
+}
+
+
+.motto-item{
+
+}

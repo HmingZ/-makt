@@ -1,0 +1,14 @@
+<view class='container'>
+  <swiper class ="swiper-image" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color= "{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class ="swiper-image-item">
+        <image src="{{item}}" class="slide-image"  />
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>
+
+<l-loading show="{{true}}" custom="{{true}}">
+  　　<image src="../../images/longmao02.gif"></image>
+　</l-loading>

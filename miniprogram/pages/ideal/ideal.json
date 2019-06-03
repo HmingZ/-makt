@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "梦起始的地方",
+  "usingComponents": {
+    "l-card": "../../dist/card/index",
+    "l-countdown": "../../dist/countdown/index",
+    "l-loading": "../../dist/loading/index"
+
+  }
+}

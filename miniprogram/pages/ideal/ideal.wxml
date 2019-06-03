@@ -1,0 +1,60 @@
+<view class="container">
+  <view class="title" >有梦的地方，就是远方</view>
+  <view class="ideallist" wx:for="{{ideallist}}" wx:for-index="index" wx:key="{{item._id}}">
+    <view class="ideal-item">
+      <movable-area >
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}" data-idealtIndex="{{index}}" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd" bindchange="handleMovableChange">
+          <view class="ideal-item-wrap">
+            <view class="ideal-movable-item">
+              <view class="ideal-movable-item-idealName">{{item.idealName}}</view>
+              <view class="ideal-movable-item-endDate">{{item.endDate}} {{item.endTime}}</view>
+            </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <l-card class="ideallist-card" type="primary" full="true" image="{{imageUrl}}" >
+            <view class="ideallist-card" >截止时间：{{item.endDate}} {{item.endTime}}</view>
+            <view class="ideallist-card">倒计时：
+            <l-countdown l-class-time="countdown-blue"  time="{{item.endDate}} {{item.endTime}}" format="{%d}天{%h}时{%m}{%s}秒" l-class="countdown-text"/>
+            </view>
+      </l-card>
+      <view class='ideal-delete-update'>
+      <label class="ideal-update" data-id="{{item._id}}" bindtap="idealUpdate">编辑  </label>
+      <label class="ideal-delete" data-id="{{item._id}}" bindtap="idealDelete">  删除</label>
+      </view>
+    </view>
+    
+  </view>
+
+  
+  <button class="ideal-create" bindtap='idealCreate' data-idealCreate='{{idealCreate}}' ><image class='ideal-create-image' mode='aspectFill' src='{{idealCreateUrl}}' ></image></button>
+
+</view>
+
+<view wx:if="{{ideallist == ''}}"> 
+  <l-loading show="{{true}}" custom="{{true}}">
+  　　<image src="../../images/longmao02.gif"></image>
+　</l-loading>
+
+</view>
+<view wx:else>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
